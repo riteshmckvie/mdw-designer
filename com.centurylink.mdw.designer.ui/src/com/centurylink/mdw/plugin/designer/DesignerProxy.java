@@ -2812,7 +2812,7 @@ public class DesignerProxy {
         }
         else {
             // user authentication
-            Boolean authenticated = true; // project.isAuthenticated();
+            Boolean authenticated = project.isAuthenticated();
             if (authenticated == null)
                 throw new AuthenticationException(
                         "Not authorized for project: " + project.getName());

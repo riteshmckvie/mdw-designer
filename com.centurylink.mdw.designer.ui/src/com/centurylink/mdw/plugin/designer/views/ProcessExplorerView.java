@@ -51,7 +51,6 @@ import org.eclipse.ui.views.properties.tabbed.ITabbedPropertySheetPageContributo
 import com.centurylink.mdw.dataaccess.version4.DBMappingUtil;
 import com.centurylink.mdw.plugin.MdwPlugin;
 import com.centurylink.mdw.plugin.PluginMessages;
-import com.centurylink.mdw.plugin.User;
 import com.centurylink.mdw.plugin.actions.MdwMenuManager;
 import com.centurylink.mdw.plugin.actions.WorkflowElementActionHandler;
 import com.centurylink.mdw.plugin.designer.WorkflowSelectionProvider;
@@ -97,7 +96,7 @@ public class ProcessExplorerView extends ViewPart
                     }
                     else {
                         // user authentication
-                        Boolean authenticated = true; // project.isAuthenticated();
+                        Boolean authenticated = project.isAuthenticated();
                         if (authenticated == null) { // has to be in a separate
                                                      // thread to take effect
                             event.item.getDisplay().asyncExec(new Runnable() {

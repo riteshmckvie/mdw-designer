@@ -3021,7 +3021,7 @@ public class WorkflowProject extends WorkflowElement
     private User user;
 
     public User getUser() {
-        return new User("dxoakes", "nyb", null);
+        return user;
     }
 
     public void setUser(User u) {
