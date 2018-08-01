@@ -15,6 +15,7 @@
  */
 package com.centurylink.mdw.plugin.preferences.model;
 
+import com.centurylink.mdw.common.constant.MiscConstants;
 import com.centurylink.mdw.plugin.PluginMessages;
 
 /**
@@ -22,9 +23,9 @@ import com.centurylink.mdw.plugin.PluginMessages;
  */
 public interface PreferenceConstants {
     // TODO: externalize these URLs
-    public static final String PREFS_DEFAULT_PROJECT_DISCOVERY_URL = "http://<host>:<port>/Discovery";
+    public static final String PREFS_DEFAULT_PROJECT_DISCOVERY_URL = MiscConstants.PROJECT_DISCOVERY_URL;
     public static final String PREFS_DEFAULT_MDW_RELEASES_URL = "http://repo.maven.apache.org/maven2";
-    public static final String PREFS_DEFAULT_WORKSPACE_SETUP_URL = "http://<host>:<port>/Environment";
+    public static final String PREFS_DEFAULT_WORKSPACE_SETUP_URL = MiscConstants.WORKSPACE_SETUP_URL;
     public static final String PREFS_DEFAULT_MDW_CENTRAL_URL = "https://mdw-central.com";
 
     public static final String PREFS_DEFAULT_COPYRIGHT_NOTICE = "/**\n * Copyright (c) 2018 CenturyLink, Inc. All Rights Reserved.\n */";

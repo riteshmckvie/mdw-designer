@@ -63,6 +63,7 @@ import org.eclipse.swt.widgets.Display;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.centurylink.mdw.common.constant.AuthConstants;
 import com.centurylink.mdw.common.utilities.AuthUtils;
 import com.centurylink.mdw.common.utilities.HttpHelper;
 
@@ -633,7 +634,7 @@ public class PluginUtil {
             helper.setReadTimeout(MdwPlugin.getSettings().getHttpReadTimeout());
             Map<String, String> hdrs = new HashMap<>();
             hdrs.put("Content-Type", "application/json");
-            hdrs.put("mdw-app-token", AuthUtils.MDW_DESIGNER_TOKEN);
+            hdrs.put("mdw-app-token", AuthConstants.MDW_DESIGNER_TOKEN);
             helper.setHeaders(hdrs);
             helper.post(json.toString());
         }
