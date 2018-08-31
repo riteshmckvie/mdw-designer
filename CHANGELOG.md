@@ -1,5 +1,12 @@
 # Change Log
 
+## [v9.3.0](https://github.com/CenturyLinkCloud/mdw-designer/tree/v9.3.0) (2018-08-31)
+[Full Changelog](https://github.com/CenturyLinkCloud/mdw-designer/compare/v9.2.9...v9.3.0)
+
+**Closed issues:**
+
+- Designer fails when Eclipse JGit version is newer than 4.x due to removed method  [\#91](https://github.com/CenturyLinkCloud/mdw-designer/issues/91)
+
 ## [v9.2.9](https://github.com/CenturyLinkCloud/mdw-designer/tree/v9.2.9) (2018-08-01)
 **Implemented enhancements:**
 
